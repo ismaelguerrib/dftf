@@ -91,7 +91,7 @@ function create() {
   //   });
   //   trashs = ["trash1", "trash2", "trash3", "trash4"];
   //   smalltrashs = ["trash5", "trash6", "trash7", "trash8"];
-  fish = this.physics.add.sprite(1000, 1000, "fish");
+  fish = this.physics.add.sprite(500, 500, "fish");
   fish.setCollideWorldBounds(true);
   this.anims.create({
     key: "left",
