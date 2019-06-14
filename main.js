@@ -44,7 +44,7 @@ function preload() {
   this.load.image("trash1", "./images-jeu/trash/42567oildrum_98985.png");
   this.load.image(
     "trash2",
-    "images-jeu/trash/Beer_Can_icon-icons.com_68781.png"
+    "./images-jeu/trash/Beer_Can_icon-icons.com_68781.png"
   );
   this.load.image("trash3", "./images-jeu/trash/coffecuptotakeaway_122701.png");
   this.load.image("trash4", "./images-jeu/trash/drinkpackage_122723.png");
