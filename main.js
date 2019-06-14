@@ -139,7 +139,7 @@ function create() {
 function update() {
   if (lives === 0) {
     setTimeout(() => {});
-    window.location = "/";
+    window.location = "https://ismaelguerrib.github.io/dftf/";
   }
   setLive();
   fish.setVelocityX(50, 50);
