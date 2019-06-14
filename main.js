@@ -58,7 +58,7 @@ function preload() {
     frameWidth: 256,
     frameHeight: 256
   });
-  this.load.audio("theme", "./sounds/underwater-theme-super-mario-world.mp3");
+  //   this.load.audio("theme", "./sounds/underwater-theme-super-mario-world.mp3");
 }
 
 function hitTrashs(fish, seaTrashs) {
@@ -134,9 +134,9 @@ function create() {
   this.physics.add.collider(fish, seaSmallTrashs, e => {
     hitTrashs();
   });
-  var music = this.sound.add("theme");
+  //   var music = this.sound.add("theme");
 
-  music.play();
+  //   music.play();
 }
 
 function update() {
