@@ -80,7 +80,7 @@ function create() {
   this.add.image(1700, 1200, "background");
 
   livesText = this.add.text(32, 32, "Lives:", {
-    fontSize: "300",
+    fontSize: "700",
     fontFamily: "",
     fill: "#00000"
   });
