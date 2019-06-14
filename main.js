@@ -43,22 +43,22 @@ const trashs = ["trash1", "trash2", "trash3", "trash4"];
 const smalltrashs = ["trash5", "trash6", "trash7"];
 
 function preload() {
-  this.load.image("background", "images-jeu/background.png");
-  this.load.image("trash1", "images-jeu/trash/42567oildrum_98985.png");
+  this.load.image("background", "./images-jeu/background.png");
+  this.load.image("trash1", "./images-jeu/trash/42567oildrum_98985.png");
   this.load.image(
     "trash2",
     "images-jeu/trash/Beer_Can_icon-icons.com_68781.png"
   );
-  this.load.image("trash3", "images-jeu/trash/coffecuptotakeaway_122701.png");
-  this.load.image("trash4", "images-jeu/trash/drinkpackage_122723.png");
-  this.load.image("trash5", "images-jeu/trash2/milk.png");
-  this.load.image("trash6", "images-jeu/trash2/coke.png");
-  this.load.image("trash7", "images-jeu/trash2/pail.png");
-  this.load.spritesheet("fish", "/images-jeu/swim_to_left_sheet-mimi.png", {
+  this.load.image("trash3", "./images-jeu/trash/coffecuptotakeaway_122701.png");
+  this.load.image("trash4", "./images-jeu/trash/drinkpackage_122723.png");
+  this.load.image("trash5", "./images-jeu/trash2/milk.png");
+  this.load.image("trash6", "./images-jeu/trash2/coke.png");
+  this.load.image("trash7", "./images-jeu/trash2/pail.png");
+  this.load.spritesheet("fish", "./images-jeu/swim_to_left_sheet-mimi.png", {
     frameWidth: 256,
     frameHeight: 256
   });
-  this.load.audio("theme", "sounds/underwater-theme-super-mario-world.mp3");
+  this.load.audio("theme", "./sounds/underwater-theme-super-mario-world.mp3");
 }
 
 function hitTrashs(fish, seaTrashs) {
@@ -84,7 +84,7 @@ function create() {
 
   livesText = this.add.text(32, 32, "Lives:", {
     fontSize: "72px",
-    fontFamily: "Splatch",
+    fontFamily: "",
     fill: "#00000"
   });
   livesText.setText("Lives:" + lives + "  " + " Time passed: " + gameTime);
