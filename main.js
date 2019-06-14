@@ -36,12 +36,12 @@ var gameTime = 0;
 var timeDisplay = null;
 
 var isHit = false;
-const trashs = ["trash1", "trash2", "trash3", "trash4"];
+const trashs = ["trash2", "trash3", "trash4"];
 const smalltrashs = ["trash5", "trash6", "trash7"];
 
 function preload() {
   this.load.image("background", "./images-jeu/background.png");
-  this.load.image("trash1", "./images-jeu/trash/42567oildrum_98985.png");
+  //   this.load.image("trash1", "./images-jeu/trash/42567oildrum_98985.png");
   this.load.image(
     "trash2",
     "./images-jeu/trash/Beer_Can_icon-icons.com_68781.png"
@@ -158,7 +158,7 @@ function update() {
   if (cursors.down.isDown) {
     fish.setVelocity(0, 1000);
   }
-  console.log("ici");
+
   timeNow = Date.now();
   if (timeNow - timeBefore >= 3000) {
     let randomIndex = Math.floor(Math.random() * Math.floor(trashs.length));
