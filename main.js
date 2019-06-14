@@ -158,12 +158,12 @@ function update() {
   if (cursors.down.isDown) {
     fish.setVelocity(0, 1000);
   }
-
+  console.log("ici");
   timeNow = Date.now();
   if (timeNow - timeBefore >= 80000) {
     let randomIndex = Math.floor(Math.random() * Math.floor(trashs.length));
     let position = Math.floor(Math.random() * 2900);
-    let seaTrashs = this.physics.add.group({
+    const seaTrashs = this.physics.add.group({
       key: trashs[randomIndex],
       setXY: { x: position, y: 0 },
       bounceX: 0,
@@ -177,7 +177,7 @@ function update() {
 
     randomIndex = Math.floor(Math.random() * Math.floor(smalltrashs.length));
     position = Math.floor(Math.random() * 2900);
-    let seaSmallTrashs = this.physics.add.group({
+    const seaSmallTrashs = this.physics.add.group({
       key: smalltrashs[randomIndex],
       setXY: { x: position, y: 0 },
       bounceX: 0.1,
