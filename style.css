@@ -1,0 +1,25 @@
+* {
+  margin: auto;
+}
+body {
+  position: relative;
+}
+
+#screengame {
+  background-image: url(/images-jeu/background.jpg);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+#gameOver {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 8;
+  font-size: 50rem;
+  background: rgb(244, 66, 66, 0.9);
+}
