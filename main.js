@@ -160,7 +160,7 @@ function update() {
   }
   console.log("ici");
   timeNow = Date.now();
-  if (timeNow - timeBefore >= 80000) {
+  if (timeNow - timeBefore >= 3000) {
     let randomIndex = Math.floor(Math.random() * Math.floor(trashs.length));
     let position = Math.floor(Math.random() * 2900);
     const seaTrashs = this.physics.add.group({
